@@ -19,18 +19,21 @@ https://public.tableau.com/app/profile/sushma6917/viz/TMDB-Movie-Database/Revenu
 ### part_05_machine_learning_genres.ipynb (Jiaolu Xie)
 
 - Prepare Predictor
+  
 Combine multiple text content to one text string. Split the string as a list and remove stop words. Create the ‘frequency’ for words, this is the Feature to use.
 
 - Multi-Class Problem for Genres (Collapse Multi Genres to one Genres)
+  
 Check the overall frequency for multi genres. Keep all Genres over 200 counts, less than 200 counts are combined to Other. Reclassify label_genre for each movie. Selecting the genre has a lower overall count to represent the ‘uniqueness’ of the movie. 
 
- Use label_genre as Target, Logistic regression model gives Accuracy at 0.379.
+Use label_genre as Target, Logistic regression model gives Accuracy at 0.379.
 
 Compare the accuracy with educated random guesses.
 
 Conclusion: even though the accuracy is 0.379, for natural language this model still captures some pattern.
 
 - Multi-Label Problem for Genres
+  
 Convert genres to multiple binary columns, use multiple columns as Target. Introducing threshold value. Consider genres that have probability > 0.35 or the genre with maximum probability as predicted genre(s). Hence, selecting 1 to 3 genres as a prediction result. Logistic regression model gives f1 score at 0.617.
 
 Implement the trained model to other text, such as book description.
