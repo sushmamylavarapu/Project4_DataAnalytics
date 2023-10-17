@@ -15,6 +15,28 @@ Clean data, save as 'movie_tableau.csv' and 'movie_machine_learning.csv' for lat
 https://public.tableau.com/app/profile/sushma6917/viz/TMDB-Movie-Database/Revenue?publish=yes
 
 ### part_04_machine_learning_rating.ipynb (Ana Maria Torres)
+#### Cleaning the data and dropping columns.
+Looking for a model that can predict movie ratings by category. Listing the movies by genre.
+
+#### Analyze whether there was a relationship between voting and years.
+The graph shows that in recent years higher ratings are obtained than 100 years ago.
+
+#### Machine Learing: Finding the model that best fits the data
+
+##### Regression Models:
+We obtained 3 measurement values:
+R2 (Rsqare): Measure to determin the model fit. The closer it is to 1, the better the model fits the data.
+MSE (The Mean Sqare Error) and RMSE (Rute Mean Sqare Error): As they are error measurements, we look for values as close to 0.
+
+The Random Forest Regressor although the R2 (R-Sqare) is still low (0.31) is the model that best fits the data.
+
+##### Classifiers:
+Pprecision, recall and F1-Score as they are not error reports but accuracy reports, we look for the values to be as close to 1 as possible.
+Confusion Matrix method, we look for the diagonal to have the largest numbers and the numbers that are not in the diagonal to be 0 (since these are the errors).
+
+Random Forest Classifier, the model performs better on movies for category 6 (precision of 0.67). 
+
+With an accurancy of 0.60 the Random Forest Classifier is the model that has the best accuracy with respect to the data.
 
 ### part_05_machine_learning_genres.ipynb (Jiaolu Xie)
 
